@@ -119,7 +119,7 @@ Test Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1
 // const markHeight = 1.69; // 1.69 m
 // let johnMass = 92; // 92 kg
 // const johnHeight = 1.95; // 1.95 m
-
+/*
 const markMass = 95; // 78 kg
 const markHeight = 1.88; // 1.69 m
 const johnMass = 85; // 92 kg
@@ -129,3 +129,25 @@ let markBMI, johnBMI;
 console.log(markBMI = markMass / (markHeight**2));
 console.log(johnBMI = johnMass / (johnHeight**2));
 console.log(markHigherBMI = (markBMI > johnBMI));
+*/
+
+const firstName = 'Blaine';
+const job = 'Software Engineer';
+const birthYear = 1998;
+const year = 2037;
+
+const blaine = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+console.log(blaine);
+
+const blaineNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(blaineNew);
+
+console.log(`Just a regular string, written with backticks \`\``);
+
+console.log(`String with \n\
+multiple \n\
+lines`);
+
+console.log(`String
+with multiple
+lines.`);

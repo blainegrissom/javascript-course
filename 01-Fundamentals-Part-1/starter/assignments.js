@@ -26,4 +26,12 @@ console.log(population>finlandPopulation);
 const avgCountryPop = 33000000;
 console.log(population>avgCountryPop);
 
-let description = 'Portugal is in Europe, and its 11 million people speak portuguese.';
+const portugalCountry = "Portugal";
+const portugalCont = "Europe";
+const portugalPop = 11000000;
+const portugalLang = "Portugeuse"
+
+// let description =  portugalCountry + "is in " + portugalCont + ", and its " + portugalPop + " people speak " + portugalLang;
+
+// Lecture: Strings and Template Literals
+const description = `${portugalCountry} is in ${portugalCont} and its ${portugalPop} people speak ${portugalLang}`;
