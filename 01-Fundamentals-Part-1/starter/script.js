@@ -129,7 +129,6 @@ let markBMI, johnBMI;
 console.log(markBMI = markMass / (markHeight**2));
 console.log(johnBMI = johnMass / (johnHeight**2));
 console.log(markHigherBMI = (markBMI > johnBMI));
-*/
 
 const firstName = 'Blaine';
 const job = 'Software Engineer';
@@ -151,3 +150,21 @@ lines`);
 console.log(`String
 with multiple
 lines.`);
+*/
+
+const age = 15;
+
+if (age >= 16) {
+    console.log(`Sarah can start her driving license.`);
+} else {
+    const yearsLeft = 16-age;
+    console.log(`Sarah cannot start her driving license. Wait another ${yearsLeft} more years.`);
+}
+let century
+const birthYear = 1998; 
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);

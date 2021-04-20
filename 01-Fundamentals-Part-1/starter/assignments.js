@@ -35,3 +35,10 @@ const portugalLang = "Portugeuse"
 
 // Lecture: Strings and Template Literals
 const description = `${portugalCountry} is in ${portugalCont} and its ${portugalPop} people speak ${portugalLang}`;
+
+// Lecture: Taking Decsisions: if / else Statements
+if (portugalPop > avgCountryPop) {
+    console.log(`Portugal's population is above ${portugalPop-avgCountryPop} average`);
+} else {
+    console.log(`Portugal's population is ${avgCountryPop-portugalPop} below average`);
+}
