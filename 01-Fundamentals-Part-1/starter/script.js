@@ -216,7 +216,6 @@ console.log('23' > '18');
 let n = '1' + 1; // 11
 n = n - 1;
 console.log(n);
-*/
 
 // 5 falsy values: 0, '', undefined, null, NaN
 console.log(Boolean(0));
@@ -237,3 +236,22 @@ if(height) {
 } else {
     console.log(`Height is UNDEFINED.`);
 }
+
+const age = '18';
+if (age === 18) console.log(`You just became an adult (strict)`);
+if (age == 18) console.log(`You just became an adult (loose)`);
+
+const favorite = Number(prompt(`What's your favorite number?`));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) { // '23' == 23
+    console.log('23 is how old I am.');
+} else if (favorite === 7) {
+    console.log(`7 is a number`);
+} else {
+    console.log(`Number is not 23 or 7`);
+}
+
+if (favorite !== 23) console.log('Why not 23');
+*/
