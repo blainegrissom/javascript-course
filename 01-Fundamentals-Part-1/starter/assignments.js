@@ -64,7 +64,6 @@ if (numNeighbours == 1) {
 */
 
 // Lecture: Logical Operators
-
 const sarahPop = 50000000;
 if ((language == 'English') && (population < sarahPop) && !isIsland) {
     console.log(`Sarah should live in ${country}.`);
