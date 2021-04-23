@@ -70,3 +70,25 @@ if ((language == 'English') && (population < sarahPop) && !isIsland) {
 } else {
     console.log(`Sarah wouldn't like the ${country}.`);
 }
+
+// Lecture: The switch Statement
+switch(language) {
+    case 'Chinese':
+    case 'Mandarin':
+        console.log(`MOST number of native speakers.`);
+        break;
+    case 'Spanish':
+        console.log(`2nd place in number of native speakers`);
+        break;
+    case 'English':
+        console.log(`3rd place in number of native speakers`);
+        break;
+    case 'Hindi':
+        console.log(`4th place in number of native speakers`);
+        break;
+    case 'Arabic':
+        console.log(`5th place in number of native speakers`);
+        break;
+    default:
+        console.log(`Good language :D`);
+}
