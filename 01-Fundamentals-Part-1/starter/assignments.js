@@ -92,3 +92,6 @@ switch(language) {
     default:
         console.log(`Good language :D`);
 }
+
+// Lecture: The Conditional (Ternary) Operator
+console.log(`${portugalCountry}'s population is ${portugalPop>33000000?'above':'below'} average.`);
