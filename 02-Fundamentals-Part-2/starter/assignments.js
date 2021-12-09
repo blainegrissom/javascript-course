@@ -39,3 +39,13 @@ const percentageOfWorld3 = (population) => {
 console.log(percentageOfWorld3(1441));
 console.log(percentageOfWorld3(300));
 console.log(percentageOfWorld3(38));
+
+// Lecture: Functions Calling Other Functions
+const describePopulation = (country,population) => {
+    const percentage = percentageOfWorld1(population);
+    return `${country} has a population of ${population}. This is roughly ${percentage}% of the world's population.`;
+}
+
+console.log(describePopulation('China', 1141));
+console.log(describePopulation('USA', 300));
+console.log(describePopulation('Canada', 38));
