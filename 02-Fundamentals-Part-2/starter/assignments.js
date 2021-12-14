@@ -1,3 +1,4 @@
+/*
 // Lecture: Functions
 function describeCountry(country, population, capitalCity) {
   const GIVEN_COUNTRY = `${country} has ${population} people and it's capital city is ${capitalCity}.`;
@@ -51,3 +52,18 @@ const describePopulation = (country, population) => {
 console.log(describePopulation("China", 1141));
 console.log(describePopulation("USA", 300));
 console.log(describePopulation("Canada", 38));
+*/
+
+// Lecture: Introduction to Arrays
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+const populations = [300, 38, 8, 1141];
+console.log(populations.length == 4);
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[populations.length - 1]),
+];
+console.log(percentages);

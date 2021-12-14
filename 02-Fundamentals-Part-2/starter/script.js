@@ -105,7 +105,7 @@ Hints:
 To calculate average of 3 values, add them all together and divide by 3
 To check if number A is at least double number B, check for A >= 2 * B.
 Apply this to the team's average scores
-*/
+
 const team1 = "Dolphins";
 const team2 = "Koalas";
 const calcAverage = (score1, score2, score3) => {
@@ -122,3 +122,44 @@ const checkWinner = (avgTeam1, avgTeam2) => {
 const avgTeam1 = calcAverage(85, 54, 41);
 const avgTeam2 = calcAverage(23, 34, 27);
 console.log(checkWinner(avgTeam1, avgTeam2));
+*/
+
+// Lecture: Introduction to Arrays
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+// const years = new Array(1991,1984,1970,2001);
+
+console.log(friends[0]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "James"; // Replacing elements of array is allowed
+console.log(friends);
+
+// friends = ['Bob','Alice'];  // Replacing entire array is illegal
+
+const firstName = "Blaine";
+const blaine = [
+  firstName,
+  "Grissom",
+  2021 - 1998,
+  "software engineer",
+  friends,
+];
+console.log(blaine, blaine.length);
+
+function calcAge(birthYear) {
+  return 2021 - birthYear;
+}
+const years = [1994, 1968, 1966, 1998, 2012];
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1]),
+];
+console.log(ages);
