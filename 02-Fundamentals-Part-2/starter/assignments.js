@@ -66,11 +66,21 @@ const percentages = [
   percentageOfWorld1(populations[populations.length - 1]),
 ];
 console.log(percentages);
-*/
 
 // Lecture: Basic Array Operations (Methods)
-const neighbors = ['Canada','Mexico'];
-neighbors.push('Utopia');
+const neighbors = ["Canada", "Mexico"];
+neighbors.push("Utopia");
 neighbors.pop();
-if (!neighbors.includes('Germany')) console.log(`Probably not a Central European country!`);
+if (!neighbors.includes("Germany"))
+  console.log(`Probably not a Central European country!`);
 neighbors[neighbors.indexOf(`Canada`)] = `Panama`;
+*/
+
+// Lecture: Introduction to Objects
+const myCountry = {
+  country: "USA",
+  capital: "Washington DC",
+  population: "300",
+  language: "English",
+  neighbors: ["Canada", "Mexico"],
+};

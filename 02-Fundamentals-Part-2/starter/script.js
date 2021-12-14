@@ -216,7 +216,7 @@ Hint: Remember that an array needs a value in each position, and that value can
 actually be the returned value of a function! So you can just call a function as array
 values (so don't store the tip values in separate variables first, but right in the new
 array)
-*/
+
 
 const calcTip = (bill) => (bill >= 50 && bill <= 300 ? 0.15 : 0.2);
 console.log(calcTip(100));
@@ -228,3 +228,21 @@ const total = [
   bills[2] + bills[2] * tips[2],
 ];
 console.log(bills, tips, total);
+*/
+
+// Lecture: Introduction to Objects
+const blaineArray = [
+  "Blaine",
+  "Grissom",
+  2021 - 1998,
+  "software engineer",
+  ["Michael", "Steven", "Paul"],
+];
+
+const blaine = {
+  firstName: "Blaine",
+  lastName: "Grissom",
+  age: 2021 - 1998,
+  job: "Software Engineer",
+  friends: ["Michael", "Steven", "Paul"],
+};
