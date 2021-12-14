@@ -52,7 +52,6 @@ const describePopulation = (country, population) => {
 console.log(describePopulation("China", 1141));
 console.log(describePopulation("USA", 300));
 console.log(describePopulation("Canada", 38));
-*/
 
 // Lecture: Introduction to Arrays
 function percentageOfWorld1(population) {
@@ -67,3 +66,11 @@ const percentages = [
   percentageOfWorld1(populations[populations.length - 1]),
 ];
 console.log(percentages);
+*/
+
+// Lecture: Basic Array Operations (Methods)
+const neighbors = ['Canada','Mexico'];
+neighbors.push('Utopia');
+neighbors.pop();
+if (!neighbors.includes('Germany')) console.log(`Probably not a Central European country!`);
+neighbors[neighbors.indexOf(`Canada`)] = `Panama`;

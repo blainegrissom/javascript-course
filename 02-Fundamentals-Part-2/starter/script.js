@@ -124,6 +124,7 @@ const avgTeam2 = calcAverage(23, 34, 27);
 console.log(checkWinner(avgTeam1, avgTeam2));
 */
 
+/*
 // Lecture: Introduction to Arrays
 const friend1 = "Michael";
 const friend2 = "Steven";
@@ -163,3 +164,30 @@ const ages = [
   calcAge(years[years.length - 1]),
 ];
 console.log(ages);
+*/
+
+// Lecture: Basic Array Operations (Methods)
+// Add Elements
+const friends = ["Michael", "Steven", "Peter"];
+const newLength = friends.push("Jay");
+console.log(newLength, friends);
+
+friends.unshift("John");
+console.log(friends);
+
+// Remove Elements
+const popped = friends.pop(); // Last Element
+console.log(popped, friends);
+
+friends.shift(); // First Element
+console.log(friends);
+
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Bob"));
+
+// includes is strict equality
+friends.push(23);
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+console.log(friends.includes("23"));
+if (friends.includes("Peter")) console.log("You have a friend called Peter");
