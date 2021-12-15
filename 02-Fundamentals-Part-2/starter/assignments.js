@@ -74,7 +74,6 @@ neighbors.pop();
 if (!neighbors.includes("Germany"))
   console.log(`Probably not a Central European country!`);
 neighbors[neighbors.indexOf(`Canada`)] = `Panama`;
-*/
 
 // Lecture: Introduction to Objects
 const myCountry = {
@@ -84,3 +83,18 @@ const myCountry = {
   language: "English",
   neighbors: ["Canada", "Mexico"],
 };
+*/
+
+// Lecture: Dot vs Bracket Notation
+const myCountry = {
+  country: "USA",
+  capital: "Washington DC",
+  population: "300",
+  language: "English",
+  neighbors: ["Canada", "Mexico"],
+};
+console.log(
+  `${myCountry.country} has ${myCountry.population} million people, ${myCountry.neighbors.length} neighbors, and the capital is ${myCountry.population}.`
+);
+console.log(Number(myCountry.population) + 2);
+console.log(Number(myCountry["population"]) - 2);

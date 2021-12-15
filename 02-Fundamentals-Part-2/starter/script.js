@@ -229,7 +229,7 @@ const total = [
 ];
 console.log(bills, tips, total);
 */
-
+/*
 // Lecture: Introduction to Objects
 const blaineArray = [
   "Blaine",
@@ -246,3 +246,33 @@ const blaine = {
   job: "Software Engineer",
   friends: ["Michael", "Steven", "Paul"],
 };
+*/
+
+// Lecture: Dot vs Bracket Notation
+const blaine = {
+  firstName: "Blaine",
+  lastName: "Grissom",
+  age: 2021 - 1998,
+  job: "Software Engineer",
+  friends: ["James", "Steven", "Paul"],
+};
+console.log(blaine.lastName);
+console.log(blaine["lastName"]);
+
+const nameKey = "Name";
+console.log(blaine["first" + nameKey]);
+
+const interest = prompt(`What do you want to know about Blaine?
+Choose between firstName, lastName, age, job, and friends.`);
+
+if (!blaine[interest]) console.log(`Not a valid request.`);
+else console.log(blaine[interest]);
+
+blaine.location = `USA`;
+blaine["twitter"] = "Don't have one!";
+console.log(blaine);
+
+//Challenge : Write "Blaine has 3 friends, and his best friend is James."
+console.log(
+  `${blaine.firstName} has ${blaine.friends.length} friends, and his best friend is ${blaine.friends[0]}.`
+);
