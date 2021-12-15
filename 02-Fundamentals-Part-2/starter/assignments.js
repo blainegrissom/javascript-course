@@ -120,7 +120,6 @@ console.log(myCountry.checkIsland());
 // Lecture: Iteration - The For Loop
 for (let voter = 1; voter <= 50; voter++)
 console.log(`Number ${voter} is voting!`);
-*/
 // Lecture: Looping Arrays, Breaking, and Continuing
 const populations = [300, 38, 8, 1141];
 const populations2 = [];
@@ -137,3 +136,15 @@ for (let i = 0; i < populations.length; i++) {
   populations2.push(percentageOfWorld1(populations[i]));
 }
 console.log(percentages, populations2);
+*/
+// Lecture: Looping Backwards and Loops in Loops
+const listOfNeighbors = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+for (let i = 0; i < listOfNeighbors.length; i++) {
+  for (x in listOfNeighbors[i]) {
+    console.log(`Neighbor:${listOfNeighbors[i][x]}`);
+  }
+}

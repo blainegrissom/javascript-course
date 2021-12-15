@@ -353,7 +353,6 @@ mark.calcBMI() > john.calcBMI()
 for (let rep=1; rep<=10; rep++) {
   console.log(`Lifting weights repetition ${rep}.`);
 }
-*/
 // Lecture: Looping Arrays, Breaking, and Continuing
 const blaine = [
   "Blaine",
@@ -365,7 +364,7 @@ const blaine = [
 const types = [];
 for (let i = 0; i < blaine.length; i++) {
   console.log(blaine[i], typeof blaine[i]);
-
+  
   //Filling types array
   // types[i] = typeof(blaine[i]);
   types.push(typeof blaine[i]);
@@ -390,4 +389,23 @@ console.log("--- BREAK WITH NUMBER ---");
 for (let i = 0; i < blaine.length; i++) {
   if (typeof blaine[i] === "number") break;
   console.log(blaine[i], typeof blaine[i]);
+}
+*/
+// Lecture: Looping Backwards and Loops in Loops
+const blaine = [
+  "Blaine",
+  "Grissom",
+  2021 - 1998,
+  "Software Engineer",
+  ["James", "Steven", "Paul"],
+];
+for (let i = blaine.length-1; i>=0; i--) {
+  console.log(blaine[i]);
+}
+
+for (let exercise=1; exercise<4; exercise++) {
+  console.log(`--Starting exercise number ${exercise}.--`);
+  for (let rep = 1; rep <=10; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weights, rep ${rep}!`);
+  }
 }
