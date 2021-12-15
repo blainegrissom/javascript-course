@@ -83,7 +83,6 @@ const myCountry = {
   language: "English",
   neighbors: ["Canada", "Mexico"],
 };
-*/
 
 // Lecture: Dot vs Bracket Notation
 const myCountry = {
@@ -98,3 +97,24 @@ console.log(
 );
 console.log(Number(myCountry.population) + 2);
 console.log(Number(myCountry["population"]) - 2);
+*/
+
+// Lecture: Object Methods
+const myCountry = {
+  country: "USA",
+  capital: "Washington DC",
+  population: "300",
+  language: "English",
+  neighbors: ["Canada", "Mexico"],
+  describe: function () {
+    console.log(
+      `${this.country} has ${this.population} million people, ${this.neighbors} neighbors, and the capital is ${this.capital}.`
+    );
+  },
+  checkIsland: function () {
+    this.neighbors ? this.isIsland=false : this.isIsland=true;
+    return this.isIsland;
+  },
+};
+myCountry.describe();
+console.log(myCountry.checkIsland());

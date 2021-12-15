@@ -246,7 +246,6 @@ const blaine = {
   job: "Software Engineer",
   friends: ["Michael", "Steven", "Paul"],
 };
-*/
 
 // Lecture: Dot vs Bracket Notation
 const blaine = {
@@ -276,3 +275,22 @@ console.log(blaine);
 console.log(
   `${blaine.firstName} has ${blaine.friends.length} friends, and his best friend is ${blaine.friends[0]}.`
 );
+*/
+
+// Lecture: Object Methods
+const blaine = {
+  firstName: "Blaine",
+  lastName: "Grissom",
+  birthYear: 1998,
+  job: "Software Engineer",
+  friends: ["James", "Steven", "Paul"],
+  hasDriversLicense: true,
+  // calcAge: function (birthYear) {
+  //   return 2021 - birthYear;
+  // },
+  calcAge: function () {
+    return 2021 - this.birthYear;
+  },
+};
+console.log(blaine.calcAge());
+console.log(blaine['calcAge']());
