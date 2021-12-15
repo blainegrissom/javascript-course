@@ -348,7 +348,46 @@ mark.calcBMI() > john.calcBMI()
     );
     
 */
+/*
 // Lecture: Iteration - The For Loop
 for (let rep=1; rep<=10; rep++) {
   console.log(`Lifting weights repetition ${rep}.`);
+}
+*/
+// Lecture: Looping Arrays, Breaking, and Continuing
+const blaine = [
+  "Blaine",
+  "Grissom",
+  2021 - 1998,
+  "Software Engineer",
+  ["James", "Steven", "Paul"],
+];
+const types = [];
+for (let i = 0; i < blaine.length; i++) {
+  console.log(blaine[i], typeof blaine[i]);
+
+  //Filling types array
+  // types[i] = typeof(blaine[i]);
+  types.push(typeof blaine[i]);
+}
+console.log(types);
+
+const years = [1998, 1994, 1968, 2021];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2021 - years[i]);
+}
+console.log(ages);
+
+//continue and break
+console.log("--- ONLY STRINGS ---");
+for (let i = 0; i < blaine.length; i++) {
+  if (typeof blaine[i] !== "string") continue;
+  console.log(blaine[i], typeof blaine[i]);
+}
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < blaine.length; i++) {
+  if (typeof blaine[i] === "number") break;
+  console.log(blaine[i], typeof blaine[i]);
 }
