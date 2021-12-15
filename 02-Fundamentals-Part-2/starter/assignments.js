@@ -97,7 +97,6 @@ console.log(
 );
 console.log(Number(myCountry.population) + 2);
 console.log(Number(myCountry["population"]) - 2);
-*/
 
 // Lecture: Object Methods
 const myCountry = {
@@ -109,12 +108,16 @@ const myCountry = {
   describe: function () {
     console.log(
       `${this.country} has ${this.population} million people, ${this.neighbors} neighbors, and the capital is ${this.capital}.`
-    );
-  },
-  checkIsland: function () {
-    this.neighbors ? this.isIsland=false : this.isIsland=true;
-    return this.isIsland;
-  },
-};
-myCountry.describe();
-console.log(myCountry.checkIsland());
+      );
+    },
+    checkIsland: function () {
+      this.neighbors ? this.isIsland=false : this.isIsland=true;
+      return this.isIsland;
+    },
+  };
+  myCountry.describe();
+  console.log(myCountry.checkIsland());
+  */
+// Lecture: Iteration - The For Loop
+for (let voter = 1; voter <= 50; voter++)
+  console.log(`Number ${voter} is voting!`);

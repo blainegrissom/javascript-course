@@ -313,7 +313,6 @@ respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
 tall.
-*/
 const mark = {
   firstName: "Mark",
   lastName: "Miller",
@@ -333,17 +332,23 @@ const john = {
   },
 };
 mark.calcBMI() > john.calcBMI()
-  ? console.log(
-      `${mark.firstName} ${
-        mark.lastName
-      }'s BMI ${mark.calcBMI()} is higher than ${john.firstName} ${
-        john.lastName
-      }'s BMI ${john.calcBMI()}`
-    )
+? console.log(
+  `${mark.firstName} ${
+    mark.lastName
+  }'s BMI ${mark.calcBMI()} is higher than ${john.firstName} ${
+    john.lastName
+  }'s BMI ${john.calcBMI()}`
+  )
   : console.log(
-      `${john.firstName} ${
-        john.lastName
-      }'s BMI ${john.calcBMI()} is higher than ${mark.firstName} ${
-        mark.lastName
-      }'s BMI ${mark.calcBMI()}`
+    `${john.firstName} ${
+      john.lastName
+    }'s BMI ${john.calcBMI()} is higher than ${mark.firstName} ${
+      mark.lastName
+    }'s BMI ${mark.calcBMI()}`
     );
+    
+*/
+// Lecture: Iteration - The For Loop
+for (let rep=1; rep<=10; rep++) {
+  console.log(`Lifting weights repetition ${rep}.`);
+}
