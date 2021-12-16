@@ -147,7 +147,6 @@ for (let i = 0; i < listOfNeighbors.length; i++) {
     console.log(`Neighbor:${listOfNeighbors[i][x]}`);
   }
 }
-*/
 // Lecture: The While Loop
 const populations = [300, 38, 8, 1141];
 const populations3 = [];
@@ -160,3 +159,4 @@ while (i < 4) {
   i++;
 }
 console.log(populations3);
+*/
